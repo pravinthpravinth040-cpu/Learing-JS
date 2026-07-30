@@ -1,113 +1,24 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="demo.js">
-    <title>Document</title>
-</head>
- <body>
-    <p id="one">
-        Hello
-    </p>
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+    }
+    .withmax{
+        width: 900px;
+        transition: 5s;
+    }
+</style>
 
-    <script>
-        var para = document.getElementById("one")   
+<div id="box">
 
-        console.log(para.textContent)
-
-        para.textContent = "bye"
-    </script> --> 
-    <!-- <h1 id="title">
-        Hello World
-    </h1> 
-
-    <button onclick="change()">change</button>
-   
-    <script>
-        var head = document.getElementById(title)
-
-        console.log(title.textContent)
-
-        function change(){
-            title.textContent = "Bye world"
-        }
-    </script>
-
-</body>
-</html> 
--->  
-
-<!-- 
-
-<input id="num1" value="">
-<input id="num2" value="">
-<button onclick="resultfunction()">Add</button>
-
-<p id="result">Result</p>
-
+</div>
+<button onclick="Change()">Change color</button>
 <script>
-        var box1 = document.getElementById("num1")
-        var box2 = document.getElementById("num2")
+    var box=document.getElementById("box")
 
-        var result = document.getElementById("result")
-
-        function resultfunction(){
-        var box1value=Number(box1.value)
-        var box2value=Number(box2.value)
-
-        var total = box1value + box2value 
-        // var total = box1value-box2value 
-        // var total = box1value*box2value 
-        // var total = box1value/box2value 
-
-            result.textContent =total
-            // result.textContent =total
-            // result.textContent =total
-            // result.textContent =total
-            
-        } 
-
-        // alert("HI")
-</script> -->
-
-
-
-
-
-
-
-
-
-
-
-<h1>Guess the Number</h1>
-<input id="guessnumber">
-<button onclick="Check()">Check</button>
-<p id="score">score = 10</p>
-<p id="result">Yor are wrong/Right</p>
-<script>    
-    var guessnumber = document.getElementById("guessnumber")
-    var result = document.getElementById("result")
-    var totalscore = 10
-    var score=document.getElementById("score")
-    var randomNumber = Math.floor(Math.random()*10)+1
-
-    function Check(){
-        var enterednumber = guessnumber.value
-        if (randomNumber == enterednumber) {
-            console.log("Right")
-            result.textContent="Right"
-            alert("WoW It's Right")
-        }
-        else{
-            // console.log("Wrong")
-            totalscore = totalscore-1
-            score.textContent="score = "+totalscore
-            result.textContent="Wrong"
-            // alert("Oo It's Wrong")
-        }
+    function Change(){
+        box.style.backgroundColor="red "
+        box.setAttribute("class","withmax")
     }
 </script>
-
-
