@@ -1,12 +1,11 @@
-<input id="inputbox" onkeyup="update()">
-<!-- <button onclick="update()">Click</button> -->
-<h1 id="result"></h1>
+<button onclick="update()">ADD</button>
+<div id="result"></div>
+    <script>
+        var div=document.getElementById("result")
+        function update(){
 
-<script>
-    var inputbox = document.getElementById("inputbox")
-    var result = document.getElementById("result")
-
-    function update(){
-        result.textContent=inputbox.value
-    }
-</script>           
+            var list=document.createElement("h1")
+            list.textContent="Ragul"
+            div.append(list)
+        }
+    </script>
