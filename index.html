@@ -1,11 +1,10 @@
-<button onclick="update()">ADD</button>
-<div id="result"></div>
-    <script>
-        var div=document.getElementById("result")
-        function update(){
+<button id="btn" onclick="update()" >Change color</button>
 
-            var list=document.createElement("h1")
-            list.textContent="Ragul"
-            div.append(list)
+
+    <script>
+        var btn =document.getElementById("btn")
+        function update()
+        {
+            btn.style.backgroundColor="red"
         }
     </script>
