@@ -1,15 +1,13 @@
-<h1 id="result">Name</h1>
-<button onclick="update(event)">Pravinth</button>
-<button onclick="update(event)">karthi</button>
-<button onclick="update(event)">John</button>
+<h1 onclick="deleteitem(event)">One</h1>
+<h1 onclick="deleteitem(event)">Two</h1>
+<h1 onclick="deleteitem(event)">Three</h1>
+<h1 onclick="deleteitem(event)">Four</h1>
+<h1 onclick="deleteitem(event)">Five</h1> 
+
 
 <script>
-    var h1 = document.getElementById("result")
-
-    function update(event)
+    function deleteitem(event)
     {
-        h1.textContent=event.target.textContent
+        event.target.remove()
     }
-    
-    alert("Hi, Iam pravinth")
 </script>
